@@ -19,3 +19,5 @@ WebFTP:  download resources from all available servers concurrently, if a file e
 Auto Search Suggestion: offer the users keyword suggestions according to their current input
 
 Proxy: this module help the crawler to crawl some sites through a proxy, this function is very useful in some campuses as the limitation of their network access.
+
+Web-front: provide the search interface to all internet users
