@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/searchResult.jsp" location="30,1110" dimension="142,48" />
+  <StrutsActivity path="/advancedSearch.jsp" location="300,255" dimension="154,48" />
+  <StrutsActivity path="/ftpSiteList.jsp" location="405,1650" dimension="136,48" />
+  <StrutsActivity path="/ftpSiteSnapshot.jsp" location="1770,825" dimension="160,48" />
+  <StrutsActivity path="/inforOutput.jsp" location="105,1260" dimension="107,49" />
+  <StrutsActivity path="/ftpSiteReg.jsp" location="-105,1695" dimension="130,48" />
+  <StrutsActivity path="/ftpSiteUpdate.jsp" location="135,1515" dimension="148,48" />
+  <StrutsActivity path="/welcomebottomForward.jsp" location="660,1620" dimension="190,48" />
+  <StrutsActivity path="/welcomemainIndex.jsp" location="-255,1230" dimension="166,48" />
+  <StrutsActivity path="/resourceRequest.jsp" location="950,650" dimension="160,48" />
+  <StrutsActivity path="/statistics.jsp" location="950,1050" dimension="130,48" />
+  <StrutsActivity path="/articleList.jsp" location="75,780" dimension="136,48" />
+  <StrutsActivity path="/articleNew.jsp" location="1230,1350" dimension="130,48" />
+  <StrutsActivity path="/articleUpdate.jsp" location="1230,1470" dimension="148,48" />
+  <StrutsActivity path="/articleShow.jsp" location="-270,1305" dimension="136,48" />
+  <StrutsActivity path="/articleResponsePostUpdate.jsp" location="1650,1575" dimension="220,48" />
+  <StrutsActivity path="/resourceRequestList.jsp" location="950,1250" dimension="184,48" />
+  <StrutsActivity path="/RosaWebFTP.jnlp" location="1550,650" dimension="136,48" />
+  <StrutsActivity path="/webFTP.jsp" location="50,650" dimension="106,48" />
+  <StrutsActivity path="/submitResponsePost.jsp" location="345,930" dimension="178,48" />
+  <StrutsActivity path="/showArticle.jsp" location="735,1425" dimension="136,-27" />
+  <StrutsActivity path="/search.do" location="-30,960" dimension="268,84" />
+  <StrutsActivity path="/singleSiteSearch.do" location="-150,255" dimension="358,84" />
+  <StrutsActivity path="/ftpSiteList.do" location="330,1455" dimension="298,84" />
+  <StrutsActivity path="/ftpSiteSnapshot.do" location="1365,810" dimension="322,84" />
+  <StrutsActivity path="/ftpSiteReg.do" location="-195,1545" dimension="292,84" />
+  <StrutsActivity path="/ftpSiteUpdateDo.do" location="45,1350" dimension="322,84" />
+  <StrutsActivity path="/ftpSiteUpdate.do" location="60,1650" dimension="310,84" />
+  <StrutsActivity path="/welcomebottom.do" location="585,1755" dimension="310,84" />
+  <StrutsActivity path="/welcomemain.do" location="-330,1080" dimension="298,84" />
+  <StrutsActivity path="/resourceRequest.do" location="650,450" dimension="352,84" />
+  <StrutsActivity path="/statisticsShow.do" location="1065,285" dimension="316,84" />
+  <StrutsActivity path="/articleList.do" location="350,750" dimension="298,84" />
+  <StrutsActivity path="/articleNew.do" location="1250,950" dimension="292,84" />
+  <StrutsActivity path="/articleUpdate.do" location="255,1065" dimension="310,84" />
+  <StrutsActivity path="/articleUpdateDo.do" location="-525,675" dimension="322,84" />
+  <StrutsActivity path="/articleShow.do" location="-330,1425" dimension="298,84" />
+  <StrutsActivity path="/articleResponsePostDo.do" location="950,1750" dimension="358,84" />
+  <StrutsActivity path="/articleResponsePostUpdateDo.do" location="1550,1450" dimension="382,84" />
+  <StrutsActivity path="/articleResponsePostUpdate.do" location="1575,1650" dimension="382,84" />
+  <StrutsActivity path="/resourceRequestList.do" location="1845,1245" dimension="346,84" />
+  <StrutsActivity path="/resourceRequestDelete.do" location="1550,350" dimension="358,84" />
+  <StrutsActivity path="/autoComplete.do" location="950,750" dimension="304,84" />
+  <StrutsActivity path="welcomebottom;6" location="360,1770" dimension="148,72" />
+  <StrutsActivity path="welcomemain;6" location="-255,960" dimension="107,75" />
+  <StrutsTransition id="/welcomebottom.do,success,/welcomebottomForward.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="740,1755" />
+      <AbsolutePoint location="740,1668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/resourceRequestList.jsp,null,/resourceRequestList.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1042,1250" />
+      <AbsolutePoint location="1042,1179" />
+      <AbsolutePoint location="2018,1179" />
+      <AbsolutePoint location="2018,1245" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleList.jsp,null,/articleUpdate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="143,828" />
+      <AbsolutePoint location="143,849" />
+      <AbsolutePoint location="538,849" />
+      <AbsolutePoint location="538,1065" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,falseAdvancedSearch,/advancedSearch.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="226,960" />
+      <AbsolutePoint location="226,279" />
+      <AbsolutePoint location="300,279" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteReg.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-15,1545" />
+      <AbsolutePoint location="-15,1293" />
+      <AbsolutePoint location="105,1293" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleShow.do,success,/articleShow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-181,1425" />
+      <AbsolutePoint location="-181,1353" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteList.do,success,/ftpSiteList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="479,1539" />
+      <AbsolutePoint location="479,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteList.jsp,null,/ftpSiteList.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="509,1650" />
+      <AbsolutePoint location="509,1539" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteUpdate.do,success,/ftpSiteUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="215,1650" />
+      <AbsolutePoint location="215,1563" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleShow.jsp,null,/articleResponsePostDo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-270,1329" />
+      <AbsolutePoint location="-450,1329" />
+      <AbsolutePoint location="-450,1857" />
+      <AbsolutePoint location="1129,1857" />
+      <AbsolutePoint location="1129,1834" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteReg.jsp,null,/ftpSiteReg.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-40,1695" />
+      <AbsolutePoint location="-40,1629" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="welcomebottom;6,null,/welcomebottom.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="508,1806" />
+      <AbsolutePoint location="585,1806" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleResponsePostUpdateDo.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1741,1450" />
+      <AbsolutePoint location="1741,579" />
+      <AbsolutePoint location="-600,579" />
+      <AbsolutePoint location="-600,1209" />
+      <AbsolutePoint location="127,1209" />
+      <AbsolutePoint location="127,1260" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="welcomemain;6,null,/welcomemain.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-201,1035" />
+      <AbsolutePoint location="-201,1080" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,searchResult,/searchResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="104,1044" />
+      <AbsolutePoint location="104,1110" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/resourceRequestDelete.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1733,434" />
+      <AbsolutePoint location="1733,555" />
+      <AbsolutePoint location="770,555" />
+      <AbsolutePoint location="770,1261" />
+      <AbsolutePoint location="212,1261" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,falseWelcomemainIndex,/welcomemain.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-15,1044" />
+      <AbsolutePoint location="-15,1125" />
+      <AbsolutePoint location="-32,1125" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteUpdateDo.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="158,1350" />
+      <AbsolutePoint location="158,1309" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleResponsePostDo.do,fail,/articleShow.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1159,1834" />
+      <AbsolutePoint location="1159,1917" />
+      <AbsolutePoint location="-210,1917" />
+      <AbsolutePoint location="-210,1509" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/resourceRequestList.do,success,/resourceRequestList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1845,1283" />
+      <AbsolutePoint location="1134,1283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleNew.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1396,1034" />
+      <AbsolutePoint location="1396,1209" />
+      <AbsolutePoint location="187,1209" />
+      <AbsolutePoint location="187,1260" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/resourceRequest.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="826,534" />
+      <AbsolutePoint location="826,1283" />
+      <AbsolutePoint location="212,1283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleList.do,success,/articleList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,795" />
+      <AbsolutePoint location="211,795" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleResponsePostUpdate.jsp,null,/articleResponsePostUpdateDo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1760,1575" />
+      <AbsolutePoint location="1760,1534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/singleSiteSearch.do,success,/advancedSearch.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="208,318" />
+      <AbsolutePoint location="377,318" />
+      <AbsolutePoint location="377,303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/searchResult.jsp,null,/search.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,1110" />
+      <AbsolutePoint location="134,1044" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleList.jsp,null,/articleList.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="141,780" />
+      <AbsolutePoint location="141,765" />
+      <AbsolutePoint location="350,765" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleUpdate.jsp,null,/articleUpdateDo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1230,1494" />
+      <AbsolutePoint location="910,1494" />
+      <AbsolutePoint location="910,717" />
+      <AbsolutePoint location="-203,717" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteSnapshot.do,success,/ftpSiteSnapshot.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1687,852" />
+      <AbsolutePoint location="1770,852" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleUpdateDo.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-364,759" />
+      <AbsolutePoint location="-364,1179" />
+      <AbsolutePoint location="157,1179" />
+      <AbsolutePoint location="157,1260" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleResponsePostUpdate.do,success,/articleResponsePostUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1766,1650" />
+      <AbsolutePoint location="1766,1623" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteUpdate.jsp,null,/ftpSiteUpdateDo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="209,1515" />
+      <AbsolutePoint location="209,1434" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteSnapshot.jsp,null,/ftpSiteSnapshot.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1860,873" />
+      <AbsolutePoint location="1860,888" />
+      <AbsolutePoint location="1687,888" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/resourceRequest.jsp,null,/resourceRequest.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="987,650" />
+      <AbsolutePoint location="987,534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleUpdate.do,success,/articleUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="565,1113" />
+      <AbsolutePoint location="1486,1113" />
+      <AbsolutePoint location="1486,1494" />
+      <AbsolutePoint location="1378,1494" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ftpSiteList.jsp,null,/ftpSiteUpdate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,1674" />
+      <AbsolutePoint location="370,1674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleNew.jsp,null,/articleNew.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1295,1350" />
+      <AbsolutePoint location="1295,1034" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/articleResponsePostDo.do,success,/inforOutput.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1119,1750" />
+      <AbsolutePoint location="1119,1344" />
+      <AbsolutePoint location="197,1344" />
+      <AbsolutePoint location="197,1309" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/welcomemain.do,success,/welcomemainIndex.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-181,1164" />
+      <AbsolutePoint location="-181,1230" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/statisticsShow.do,success,/statistics.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1381,327" />
+      <AbsolutePoint location="2065,327" />
+      <AbsolutePoint location="2065,1074" />
+      <AbsolutePoint location="1080,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
