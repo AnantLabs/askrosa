@@ -1,0 +1,2 @@
+java -Xms256M -Xmx512M  -cp ./;./bin/;./lib/commons-email-1.1.jar;./lib/commons-lang-2.4.jar;./lib/commons-net-ftp-2.0.jar;./lib/jakarta-oro-2.0.8.jar;./lib/jdom.jar;./lib/lucene-analyzers-2.4.1.jar;./lib/lucene-core-2.4.1.jar;./lib/lucene-highlighter-2.4.1.jar;./lib/lucene-snowball-2.4.1.jar;./lib/lucene-spellchecker-2.4.1.jar;./lib/mail.jar;./lib/mysql-connector-java-3.1.14-bin.jar;./lib/log4j-1.2.15.jar;./lib/lucene-spellchecker-2.4.1.jar windowsservice.RosaIndexingServer
+pause
