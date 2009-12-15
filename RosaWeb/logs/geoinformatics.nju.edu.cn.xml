@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807578</millis>
+  <sequence>1</sequence>
+  <logger>geoinformatics.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Start crawling ftp://geoinformatics.nju.edu.cn...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807656</millis>
+  <sequence>10</sequence>
+  <logger>geoinformatics.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>geoinformatics.nju.edu.cn connected: 220-------==== Welcome to Geoinformatics@NJU FTP Server ====------
+220-          »¶Ó­·ÃÎÊ ÄÏ¾©´óÑ§µØÀíÐÅÏ¢¿ÆÑ§Ïµ FTP·þÎñÆ÷
+220-
+220-              Ð£ÄÚÓÃ»§ÄäÃû·ÃÎÊ²é¿´ÎÄ¼þÁÐ±í
+220-              ÏÂÔØÇëÓÃÕÊ»§£ºgis£ºgis
+220-                        »òÕßdownload£ºdownload
+220-       incomingfilesÄ¿Â¼¿ÉÒÔÉÏ´«ÎÄ¼þ£¬Ð»Ð»ÄúµÄ×ÊÔ´¹²Ïí£¡
+220-           Ï£ÍûÕâÀï³ÉÎªµØÀíÐÅÏ¢¿ÆÑ§°®ºÃÕßµÄÌìÌÃ
+220-
+220-
+220-                Administrator: WickerPark
+220-         Please Contact WickerPark at BBS.NJU.EDU.CN
+220-
+220 -------==== Welcome to Geoinformatics@NJU FTP Server ====------------------
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807656</millis>
+  <sequence>12</sequence>
+  <logger>geoinformatics.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Login to ftp://geoinformatics.nju.edu.cn ok:230 Logged on
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807859</millis>
+  <sequence>19</sequence>
+  <logger>geoinformatics.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Finish crawling ftp://geoinformatics.nju.edu.cn</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807859</millis>
+  <sequence>20</sequence>
+  <logger>geoinformatics.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>16 items are crawled</message>
+</record>
+</log>

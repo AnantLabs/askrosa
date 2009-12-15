@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>neverModules autocomplete - google Sugguest Demo - http://www.never-online.net </title>
+    <meta http-equiv="ImageToolbar" content="no" />
+    <meta name="author" content="never-online, BlueDestiny"/>
+    <meta name="keywords" content="never modules, Mozilla CSS, C#, .net, Reference, BlueDestiny, never-online"/>
+    <meta name="description" content="javascript reference, c sharp artilces"/>
+    <meta name="creator.name" content="never-online, BlueDestiny" />
+    <style type="text/css" media="all" title="Default">
+      @import "./styles/main.css";
+      @import "./styles/autocomplete.css";
+    </style>
+    <script type="text/javascript" src="script/neverModules-autoComplete.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+      completeDataSource = [
+        {
+          'text':'����',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'�й�',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'ajax',
+          'content':'BlueDestiny[a]126.com'
+        },
+        {
+          'text':'blueDestiny',
+          'content':'BlueDestiny[a]126.com'
+        },
+        {
+          'text':'never-online',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'google earth',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'ajax',
+          'content':'BlueDestiny[a]126.com'
+        },
+        {
+          'text':'blueDestiny',
+          'content':'BlueDestiny[a]126.com'
+        },
+        {
+          'text':'never-online',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'google earth',
+          'content':'BlueDestiny[a]126.com',
+          'hints':'http://www.never-online.net'
+        },
+        {
+          'text':'ajax',
+          'content':'BlueDestiny[a]126.com'
+        },
+        {
+          'text':'blueDestiny',
+          'content':'BlueDestiny[a]126.com'
+        }
+      ];
+      
+      var autoComplete = null;
+      onload = function pageLoadHdle() {
+        var configuration = {
+          instanceName: "autoComplete",
+          textbox: document.getElementById("demo"),
+          dataSource: completeDataSource
+        };
+
+        autoComplete = new neverModules.modules.autocomplete(configuration);
+        
+        autoComplete.callback = function (autocompleteValue, autocompleteContent) {
+          document.getElementById("tx").value =
+          "Your text is:[" +autocompleteValue+ "]; the content is:[" +autocompleteContent+ "]" ;
+        }
+        
+        autoComplete.useContent = true;
+				autoComplete.useSpaceMatch = true;
+				autoComplete.ignoreWhere = true;
+        autoComplete.create();
+        //autoComplete.expandAllItem();
+
+        autoComplete.showAnimateImage("images/indicator.gif");
+
+        window.setTimeout(
+          function closeAnimateImageAfter1seconds() { 
+            autoComplete.closeAnimateImage();
+          }, 1000);
+      }
+    //]]>
+    </script>
+  </head>
+
+  <body id="www.never-online.net">
+    <div id="header">
+      <h1> neverModules autocomplete - google Sugguest Demo </h1>
+      by never-online - <a href="http://www.never-online.net">http://www.never-online.net</a> - updated: 2007-3-23
+      <hr />
+    </div>
+    <div class="content">
+      <div> double click expand all item, input "never-online", "blueDestiny"</div>
+      <input id="demo" 
+      onkeyup="autoComplete.hdleEvent(event)" 
+      ondblclick="autoComplete.expandAllItem();"
+      style="width:300px;font:10pt Arial;"/>
+       | <a href="javascript:autoComplete.showAnimateImage();">showAnimateImage</a>
+       | <a href="javascript:autoComplete.closeAnimateImage();">closeAnimateImage</a> |
+      <br/>
+      callback demo
+      <textarea id="tx" style="width:100%; font:10pt Arial"></textarea>
+    </div>
+      <div class="content" style="text-align:center">
+        <script type="text/javascript" src="/ad/google_code_ad.js"></script>
+      </div>
+    <div id="footer">
+      neverModules - autocomplete @ Power By never-online.net
+    </div>
+  </body>
+</html>

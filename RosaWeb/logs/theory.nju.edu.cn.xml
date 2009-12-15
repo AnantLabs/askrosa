@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852656</millis>
+  <sequence>37</sequence>
+  <logger>theory.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Start crawling ftp://theory.nju.edu.cn...</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852687</millis>
+  <sequence>38</sequence>
+  <logger>theory.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>theory.nju.edu.cn connected: 220-
+220-»¶Ó­·ÃÎÊÄÏ¾©´óÑ§ÀíÂÛÎïÀíFtp·þÎñÆ÷£¡
+220-
+220 Theory FTP Server ready.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852750</millis>
+  <sequence>39</sequence>
+  <logger>theory.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Login to ftp://theory.nju.edu.cn ok:230-
+230-         »¶Ó­·ÃÎÊÀíÂÛÎïÀí×é FTP ·þÎñÆ÷
+230----------------------------------------------
+230-    Welcome, archive user movie@172.16.65.9 !
+230-
+230-    The local time is: Mon Mar 10 11:08:08 2008
+230-    Users allowed, 8 users online. Max users 0.
+230-
+230-    ¸ü¶àµÄÓ°ÊÓ¡¢Èí¼þ×ÊÔ´¾¡ÔÚThephyËÑË÷:
+230-                   http://thephy.nju.edu.cn/
+230------------------------------------------------
+230-			           ThephyGroup
+230-				    2003/03			      
+230-				   
+230 Login successful. Have fun.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:58:07</date>
+  <millis>1205117887859</millis>
+  <sequence>49</sequence>
+  <logger>theory.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Finish crawling ftp://theory.nju.edu.cn</message>
+</record>
+<record>
+  <date>2008-03-10T10:58:07</date>
+  <millis>1205117887859</millis>
+  <sequence>50</sequence>
+  <logger>theory.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>6846 items are crawled</message>
+</record>
+</log>

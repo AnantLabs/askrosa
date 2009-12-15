@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+
+
+<struts-config>
+	<form-beans>
+	<form-bean name="searchForm" type="cn.askrosa.struts.form.SearchForm" />
+    <form-bean name="resourceRequestForm" type="cn.askrosa.struts.form.ResourceRequestForm" />
+    <form-bean name="resourceRequestListForm" type="cn.askrosa.struts.form.ResourceRequestListForm" />
+    <form-bean name="articleNewForm" type="cn.askrosa.struts.form.ArticleNewForm" />
+    <form-bean name="articleListForm" type="cn.askrosa.struts.form.ArticleListForm" />
+    <form-bean name="articleUpdateForm" type="cn.askrosa.struts.form.ArticleUpdateForm" />
+    <form-bean name="articleResponsePostForm" type="cn.askrosa.struts.form.ArticleResponsePostForm" />
+    <form-bean name="articleResponsePostUpdateForm" type="cn.askrosa.struts.form.ArticleResponsePostUpdateForm" />
+    <form-bean name="ftpSiteRegForm" type="cn.askrosa.struts.form.FtpSiteRegForm" />
+    <form-bean name="ftpSiteListForm" type="cn.askrosa.struts.form.FtpSiteListForm" />
+    <form-bean name="ftpSiteUpdateForm" type="cn.askrosa.struts.form.FtpSiteUpdateForm" />    
+	<form-bean name="ftpSiteSnapshotForm" type="cn.askrosa.struts.form.FtpSiteSnapshotForm" />
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards>	
+	<forward name="welcomebottom" path="/welcomebottom.do"/>
+    <forward name="welcomemain" path="/welcomemain.do"/>
+	</global-forwards>
+
+	<action-mappings>		
+	<action
+      attribute="searchForm"
+      input="/searchResult.jsp"
+      name="searchForm"
+      path="/search"
+      scope="session"
+      validate="false"
+      type="cn.askrosa.struts.action.SearchAction">
+      <forward name="searchResult" path="/searchResult.jsp" />
+      <forward name="falseWelcomemainIndex" path="/welcomemain.do" />
+    </action>
+  
+    <action
+	  attribute="ftpSiteListForm"
+      input="/ftpSiteList.jsp"
+      name="ftpSiteListForm"
+      scope="session"  
+      path="/ftpSiteList"      
+      type="cn.askrosa.struts.action.FtpSiteListAction"
+      validate="false">      
+      <forward name="success" path="/ftpSiteList.jsp" />
+    </action>
+ 	    <action
+ 	  attribute="ftpSiteSnapshotForm"
+ 	  input="/ftpSiteSnapshot.jsp"
+ 	  name="ftpSiteSnapshotForm"
+      path="/ftpSiteSnapshot"
+      type="cn.askrosa.struts.action.FtpSiteSnapshotAction">      
+      <forward name="success" path="/ftpSiteSnapshot.jsp" />
+    </action>   
+	<action
+      attribute="ftpSiteRegForm"
+      input="/ftpSiteReg.jsp"
+      name="ftpSiteRegForm"
+      path="/ftpSiteReg"
+      scope="request"
+      type="cn.askrosa.struts.action.FtpSiteRegAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+	<action
+      attribute="ftpSiteUpdateForm"
+      input="/ftpSiteUpdate.jsp"
+      name="ftpSiteUpdateForm"
+      path="/ftpSiteUpdateDo"
+      type="cn.askrosa.struts.action.FtpSiteUpdateDoAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+		<action
+      attribute="ftpSiteUpdateForm"
+      input="/ftpSiteList.jsp"
+      name="ftpSiteUpdateForm"
+      path="/ftpSiteUpdate"
+      type="cn.askrosa.struts.action.FtpSiteUpdateAction"
+      validate="false">
+      <forward name="success" path="/ftpSiteUpdate.jsp" />
+    </action>   
+    
+    <action path="/welcomebottom" type="cn.askrosa.struts.action.WelcomebottomAction">
+       <forward name="success" path="/welcomebottomForward.jsp" />
+    </action>
+    <action path="/welcomemain" type="cn.askrosa.struts.action.WelcomemainAction">
+       <forward name="success" path="/welcomemainIndex.jsp" />
+    </action>
+    
+    <action
+      attribute="resourceRequestForm"
+      input="/resourceRequest.jsp"
+      name="resourceRequestForm"
+      path="/resourceRequest"
+      scope="request"
+      type="cn.askrosa.struts.action.ResourceRequestAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+    <action
+      path="/statisticsShow"
+      type="cn.askrosa.struts.action.StatisticsShowAction"
+      validate="false">
+      <forward name="success" path="/statistics.jsp" />
+    </action>    
+    
+    <action
+      attribute="articleListForm"
+      input="/articleList.jsp"
+      name="articleListForm"
+      scope="session"
+      path="/articleList"
+      type="cn.askrosa.struts.action.ArticleListAction"
+      validate="false">
+      <forward name="success" path="/articleList.jsp" />
+    </action>
+    <action
+      attribute="articleNewForm"
+      input="/articleNew.jsp"
+      name="articleNewForm"
+      path="/articleNew"
+      scope="request"
+      type="cn.askrosa.struts.action.ArticleNewAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+    <action
+      attribute="articleUpdateForm"
+      input="/articleList.jsp"
+      name="articleUpdateForm"
+      path="/articleUpdate"
+      type="cn.askrosa.struts.action.ArticleUpdateAction"
+      validate="false">
+      <forward name="success" path="/articleUpdate.jsp" />
+    </action>
+    <action
+      attribute="articleUpdateForm"
+      input="/articleUpdate.jsp"
+      name="articleUpdateForm"
+      path="/articleUpdateDo"
+      type="cn.askrosa.struts.action.ArticleUpdateDoAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+    <action
+      path="/articleShow"
+      type="cn.askrosa.struts.action.ArticleShowAction"
+      validate="false">
+      <forward name="success" path="/articleShow.jsp" />
+    </action>
+    <action
+      attribute="articleResponsePostForm"
+      input="/articleShow.jsp"
+      name="articleResponsePostForm"
+      path="/articleResponsePostDo"
+      validate="false"
+      scope="request"
+      type="cn.askrosa.struts.action.ArticleResponsePostDoAction">
+      <forward name="success" path="/inforOutput.jsp" />
+      <forward name="fail" path="/articleShow.do" />
+    </action>  
+    <action
+      attribute="articleResponsePostUpdateForm"
+      input="/articleResponsePostUpdate.jsp"
+      name="articleResponsePostUpdateForm"
+      path="/articleResponsePostUpdateDo"
+      type="cn.askrosa.struts.action.ArticleResponsePostUpdateDoAction">
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+    <action
+      attribute="articleResponsePostUpdateForm"
+      name="articleResponsePostUpdateForm"
+      path="/articleResponsePostUpdate"
+      type="cn.askrosa.struts.action.ArticleResponsePostUpdateAction"
+      validate="false">
+      <forward name="success" path="/articleResponsePostUpdate.jsp" />
+    </action>
+    <action
+      attribute="resourceRequestListForm"
+      input="/resourceRequestList.jsp"
+      name="resourceRequestListForm"
+      scope="session"
+      path="/resourceRequestList"
+      type="cn.askrosa.struts.action.ResourceRequestListAction"
+      validate="false">
+      <forward name="success" path="/resourceRequestList.jsp" />
+    </action>
+    
+    <action path="/resourceRequestDelete" 
+    type="cn.askrosa.struts.action.ResourceRequestDeleteAction" >
+      <forward name="success" path="/inforOutput.jsp" />
+    </action>
+    <action path="/autoComplete" type="cn.askrosa.struts.action.AutoCompleteAction" />    
+	</action-mappings>
+
+	<message-resources
+		parameter="cn.askrosa.struts.ApplicationResources" />
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+</struts-config>
+

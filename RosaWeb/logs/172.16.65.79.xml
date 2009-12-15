@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807593</millis>
+  <sequence>3</sequence>
+  <logger>172.16.65.79</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>13</thread>
+  <message>Start crawling ftp://172.16.65.79...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807625</millis>
+  <sequence>6</sequence>
+  <logger>172.16.65.79</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>13</thread>
+  <message>172.16.65.79 connected: 220 Welcome to Weiwei's VSFTPD Service
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807656</millis>
+  <sequence>9</sequence>
+  <logger>172.16.65.79</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>13</thread>
+  <message>Login to ftp://172.16.65.79 ok:230 Login successful.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807734</millis>
+  <sequence>16</sequence>
+  <logger>172.16.65.79</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>13</thread>
+  <message>Finish crawling ftp://172.16.65.79</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807734</millis>
+  <sequence>17</sequence>
+  <logger>172.16.65.79</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>13</thread>
+  <message>3 items are crawled</message>
+</record>
+</log>

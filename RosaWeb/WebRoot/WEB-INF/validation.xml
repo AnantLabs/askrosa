@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN" "validator_1_3_0.dtd" >
+<form-validation>
+    <formset>
+        <form name="ftpSiteRegForm">
+            <field property="ftpSiteInfo.server" depends="required,mask">
+                <msg name="required" key="ftpsearch.jsp.regftpsite.error.server.missing"/>
+                <msg name="mask" key="ftpsearch.jsp.regftpsite.error.server.illegal"/>
+                <var>
+                <var-name>mask</var-name>
+                <var-value>^((((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)(\.((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)){3})|([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?))$</var-value>
+                </var>
+            </field>
+            <field property="ftpSiteInfo.port" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.regftpsite.error.port.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.regftpsite.error.port.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>65535</var-value>
+	            </var>
+            </field>    
+            <field property="ftpSiteInfo.crawlInterval" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.regftpsite.error.crawlinterval.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.regftpsite.error.crawlinterval.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>1</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>30</var-value>
+	            </var>
+            </field>
+            <field property="ftpSiteInfo.speed" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.regftpsite.error.speed.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.regftpsite.error.speed.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>2147483647</var-value>
+	            </var>
+            </field>         
+            <field property="ftpSiteInfo.userslimit" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.regftpsite.error.userslimit.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.regftpsite.error.userslimit.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>2147483647</var-value>
+	            </var>
+            </field>
+            <field property="ftpSiteInfo.encoding" depends="required">
+            <msg name="required" key="ftpsearch.jsp.regftpsite.error.encoding.missing"/>
+            </field>            
+            <field property="ftpSiteInfo.username" depends="required,mask,maxlength,minlength">
+            <msg name="required" key="ftpsearch.jsp.regftpsite.error.username.missing"/>
+            <msg name="mask" key="ftpsearch.jsp.regftpsite.error.username.illegal"/>
+            <msg name="minlength" key="ftpsearch.jsp.regftpsite.error.username.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.regftpsite.error.username.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            <var>
+            <var-name>mask</var-name>
+            <var-value>^\S*$</var-value>
+            </var>
+            </field>         
+            <field property="ftpSiteInfo.password" depends="mask,maxlength,minlength">
+            <msg name="mask" key="ftpsearch.jsp.regftpsite.error.password.illegal"/>
+                <msg name="minlength" key="ftpsearch.jsp.regftpsite.error.password.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.regftpsite.error.password.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>           
+            <field property="ftpSiteInfo.access" depends="required,mask,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.regftpsite.error.access.missing"/>
+                <msg name="mask" key="ftpsearch.jsp.regftpsite.error.access.illegal"/>
+                <msg name="minlength" key="ftpsearch.jsp.regftpsite.error.access.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.regftpsite.error.access.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>          
+            <field property="ftpSiteInfo.admin" depends="maxlength,minlength">
+            <msg name="minlength" key="ftpsearch.jsp.regftpsite.error.admin.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.regftpsite.error.admin.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>          
+            <field property="ftpSiteInfo.verify" depends="required,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.regftpsite.error.verify.missing"/>
+                <msg name="minlength" key="ftpsearch.jsp.regftpsite.error.verify.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.regftpsite.error.verify.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+			<field property="verifyConfirm" depends="validwhen">
+			<msg name="validwhen" key="ftpsearch.jsp.regftpsite.error.verify.mismatch"/>
+			<var>
+			<var-name>test</var-name>
+			<var-value>(ftpSiteInfo.verify==*this*)</var-value>
+			</var>
+			</field>    
+        </form>            
+        <form name="ftpSiteUpdateForm">
+            <field property="ftpSiteInfo.server" depends="required,mask">
+                <msg name="required" key="ftpsearch.jsp.updateftpsite.error.server.missing"/>
+                <msg name="mask" key="ftpsearch.jsp.updateftpsite.error.server.illegal"/>
+                <var>
+                <var-name>mask</var-name>
+                <var-value>^((((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)(\.((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d)){3})|([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?))$</var-value>
+                </var>
+            </field>
+            <field property="ftpSiteInfo.port" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.port.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.updateftpsite.error.port.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>65535</var-value>
+	            </var>
+            </field>
+            
+               <field property="ftpSiteInfo.speed" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.speed.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.updateftpsite.error.speed.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>2147483647</var-value>
+	            </var>
+            </field>
+            
+               <field property="ftpSiteInfo.userslimit" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.userslimit.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.updateftpsite.error.userslimit.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>0</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>2147483647</var-value>
+	            </var>
+            </field>
+            
+                <field property="ftpSiteInfo.crawlInterval" depends="required,intRange">
+	            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.crawlinterval.missing"/>
+	            <msg name="intRange" key="ftpsearch.jsp.updateftpsite.error.crawlinterval.range"/>
+	            <arg name="intRange" key="${var:min}" position="0" resource = "false"/>
+	            <arg name="intRange" key="${var:max}" position="1" resource = "false"/>
+	            <var>
+	            <var-name>min</var-name>
+	            <var-value>1</var-value>
+	            </var>
+	            <var>
+	            <var-name>max</var-name>
+	            <var-value>30</var-value>
+	            </var>
+            </field>
+            
+            <field property="ftpSiteInfo.encoding" depends="required">
+            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.encoding.missing"/>
+            </field>
+            
+            <field property="ftpSiteInfo.username" depends="required,mask,maxlength,minlength">
+            <msg name="required" key="ftpsearch.jsp.updateftpsite.error.username.missing"/>
+            <msg name="mask" key="ftpsearch.jsp.updateftpsite.error.username.illegal"/>
+         		<msg name="minlength" key="ftpsearch.jsp.updateftpsite.error.username.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.updateftpsite.error.username.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+            
+            <field property="ftpSiteInfo.password" depends="mask,maxlength,minlength">
+            <msg name="mask" key="ftpsearch.jsp.updateftpsite.error.password.illegal"/>
+                <msg name="minlength" key="ftpsearch.jsp.updateftpsite.error.password.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.updateftpsite.error.password.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+             <field property="ftpSiteInfo.access" depends="required,mask,maxlength,minlength">
+                <msg name="required"
+                	key="ftpsearch.jsp.updateftpsite.error.access.missing" />
+                <msg name="mask" key="ftpsearch.jsp.updateftpsite.error.access.illegal"/>
+                <msg name="minlength" key="ftpsearch.jsp.updateftpsite.error.access.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.updateftpsite.error.access.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>mask</var-name>
+            	<var-value>^\S*$</var-value>
+            	</var>
+            	<var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+            <field property="ftpSiteInfo.admin" depends="maxlength,minlength">
+            <msg name="minlength" key="ftpsearch.jsp.updateftpsite.error.admin.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.updateftpsite.error.admin.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+            
+            <field property="ftpSiteInfo.verify" depends="required,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.updateftpsite.error.verify.missing"/>
+                <msg name="minlength" key="ftpsearch.jsp.updateftpsite.error.verify.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.updateftpsite.error.verify.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+        </form>
+        <form name="resourceRequestForm">
+        <field property="request.nickname" depends="required">
+        <msg name="required" key="ftpsearch.jsp.request.nickname.required"/>
+        </field>
+        <field property="request.resourcename"  depends="required">
+        <msg name="required" key="ftpsearch.jsp.request.resourcename.required"/>
+        </field>
+        <field property="request.email"  depends="required,email">
+        <msg name="required" key="ftpsearch.jsp.request.email.required"/>
+        <msg name="email"    key="ftpsearch.jsp.request.email.illegal"/>
+        </field>
+        </form>
+        <form name="articleNewForm">
+             <field property="article.author" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.author.missing"/>
+         </field>
+             <field property="article.title" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.title.missing"/>
+         </field>
+             <field property="article.content" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.content.missing"/>
+         </field>
+         <field property="article.verify" depends="required,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.messageboard.error.verify.missing"/>
+                <msg name="minlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+			<field property="verifyConfirm" depends="validwhen">
+			<msg name="validwhen" key="ftpsearch.jsp.messageboard.error.verify.mismatch"/>
+			<var>
+			<var-name>test</var-name>
+			<var-value>((*this*!=null) and (article.verify==*this*))</var-value>
+			</var>
+			</field>
+        </form>
+        <form name="articleUpdateForm">
+        <field property="article.author" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.author.missing"/>
+         </field>
+             <field property="article.title" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.title.missing"/>
+         </field>
+             <field property="article.content" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.content.missing"/>
+         </field>
+             <field property="article.verify" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.verify.missing"/>
+         </field>
+        </form>        
+        <form name="articleResponsePostForm">
+        <field property="responsePost.author" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.author.missing"/>
+         </field>
+             <field property="responsePost.content" depends="required">
+         <msg name="required" key="ftpsearch.jsp.messageboard.error.content.missing"/>
+         </field>
+         <field property="responsePost.verify" depends="required,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.messageboard.error.verify.missing"/>
+                <msg name="minlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+			<field property="verifyConfirm" depends="validwhen">
+			    <msg name="validwhen" key="ftpsearch.jsp.messageboard.error.verify.mismatch"/>
+			    <var>
+			    <var-name>test</var-name>
+			    <var-value>((*this*!=null) and (responsePost.verify==*this*))</var-value>
+			    </var>
+			</field>
+        </form>       
+        <form name="articleResponsePostUpdateForm">
+         <field property="responsePost.author" depends="required">
+                <msg name="required" key="ftpsearch.jsp.messageboard.error.author.missing"/>
+         </field>
+         <field property="responsePost.content" depends="required">
+                <msg name="required" key="ftpsearch.jsp.messageboard.error.content.missing"/>
+         </field>
+         <field property="responsePost.verify" depends="required,maxlength,minlength">
+                <msg name="required" key="ftpsearch.jsp.messageboard.error.verify.missing"/>
+                <msg name="minlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <msg name="maxlength" key="ftpsearch.jsp.messageboard.error.verify.length"/>
+                <arg name="minlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="minlength" key="${var:maxlength}" position="1" resource="false"/>
+                <arg name="maxlength" key="${var:minlength}" position="0" resource="false"/>
+                <arg name="maxlength" key="${var:maxlength}" position="1" resource="false"/>
+                <var>
+                <var-name>minlength</var-name>
+                <var-value>2</var-value>
+                </var>
+                <var>
+                <var-name>maxlength</var-name>
+                <var-value>30</var-value>
+                </var>
+            </field>
+        </form>       
+    </formset>
+</form-validation>

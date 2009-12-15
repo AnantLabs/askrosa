@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807609</millis>
+  <sequence>5</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Finishing indexing...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807734</millis>
+  <sequence>18</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>Finish indexing 172.16.65.79 : 3 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807859</millis>
+  <sequence>21</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Finish indexing geoinformatics.nju.edu.cn : 16 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:57</date>
+  <millis>1205117817343</millis>
+  <sequence>30</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Finish indexing 202.119.45.123 : 1434 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852062</millis>
+  <sequence>36</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>Finish indexing nlp.nju.edu.cn : 5461 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:35</date>
+  <millis>1205117855156</millis>
+  <sequence>42</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Finish indexing 202.119.43.210 : 3781 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:36</date>
+  <millis>1205117856703</millis>
+  <sequence>45</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>Finish indexing 172.16.166.25 : 6777 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:44</date>
+  <millis>1205117864015</millis>
+  <sequence>48</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>Finish indexing essi.nju.edu.cn : 8001 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T10:58:07</date>
+  <millis>1205117887859</millis>
+  <sequence>51</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>Finish indexing theory.nju.edu.cn : 6846 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T12:22:55</date>
+  <millis>1205122975937</millis>
+  <sequence>54</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder$BuildSiteIndexTarget</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Finish indexing thephy.nju.edu.cn : 255216 files in all</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984203</millis>
+  <sequence>55</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backup index files...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984203</millis>
+  <sequence>56</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing 172.16.65.79 ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984312</millis>
+  <sequence>57</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing geoinformatics.nju.edu.cn ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984437</millis>
+  <sequence>58</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing 202.119.45.123 ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984562</millis>
+  <sequence>59</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing nlp.nju.edu.cn ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984671</millis>
+  <sequence>60</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing 202.119.43.210 ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984750</millis>
+  <sequence>61</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing 172.16.166.25 ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:04</date>
+  <millis>1205122984968</millis>
+  <sequence>62</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing essi.nju.edu.cn ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:05</date>
+  <millis>1205122985015</millis>
+  <sequence>63</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing theory.nju.edu.cn ...</message>
+</record>
+<record>
+  <date>2008-03-10T12:23:05</date>
+  <millis>1205122985296</millis>
+  <sequence>64</sequence>
+  <logger>indexer.IndexBuilder</logger>
+  <level>INFO</level>
+  <class>indexer.IndexBuilder</class>
+  <method>finish</method>
+  <thread>15</thread>
+  <message>Backing thephy.nju.edu.cn ...</message>
+</record>
+</log>
