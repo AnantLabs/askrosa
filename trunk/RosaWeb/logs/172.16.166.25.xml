@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807578</millis>
+  <sequence>2</sequence>
+  <logger>172.16.166.25</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>12</thread>
+  <message>Start crawling ftp://172.16.166.25...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807625</millis>
+  <sequence>7</sequence>
+  <logger>172.16.166.25</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>12</thread>
+  <message>172.16.166.25 connected: 220 Serv-U FTP Server v6.4 for WinSock ready...
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807625</millis>
+  <sequence>8</sequence>
+  <logger>172.16.166.25</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>12</thread>
+  <message>Login to ftp://172.16.166.25 ok:230 User logged in, proceed.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:36</date>
+  <millis>1205117856703</millis>
+  <sequence>43</sequence>
+  <logger>172.16.166.25</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>12</thread>
+  <message>Finish crawling ftp://172.16.166.25</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:36</date>
+  <millis>1205117856703</millis>
+  <sequence>44</sequence>
+  <logger>172.16.166.25</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>12</thread>
+  <message>6777 items are crawled</message>
+</record>
+</log>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:57</date>
+  <millis>1205117817500</millis>
+  <sequence>31</sequence>
+  <logger>202.119.43.210</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Start crawling ftp://202.119.43.210...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:57</date>
+  <millis>1205117817500</millis>
+  <sequence>32</sequence>
+  <logger>202.119.43.210</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>202.119.43.210 connected: 220 Serv-U FTP Server v5.0 for WinSock ready...
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:57</date>
+  <millis>1205117817656</millis>
+  <sequence>33</sequence>
+  <logger>202.119.43.210</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Login to ftp://202.119.43.210 ok:230-»¶Ó­µÇÂ½CzyµÄFTP¡£
+230-¿ª·ÅÊ±¼ä£½±¾ÈËÔÚÊµÑéÊÒµÄÊ±¼ä¡£
+230-»ù±¾ÉÏÊÇÔçÉÏÊ®µãµ½ÍíÉÏÊ®Ò»µã¡£
+230-ÉÏ´«µÄ»°Çë´«µ½IncomingÄ¿Â¼ÏÂ¡£
+230 User logged in, proceed.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:35</date>
+  <millis>1205117855156</millis>
+  <sequence>40</sequence>
+  <logger>202.119.43.210</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>Finish crawling ftp://202.119.43.210</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:35</date>
+  <millis>1205117855156</millis>
+  <sequence>41</sequence>
+  <logger>202.119.43.210</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>11</thread>
+  <message>3781 items are crawled</message>
+</record>
+</log>

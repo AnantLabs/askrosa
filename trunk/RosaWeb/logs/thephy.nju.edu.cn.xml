@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807578</millis>
+  <sequence>0</sequence>
+  <logger>thephy.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>10</thread>
+  <message>Start crawling ftp://thephy.nju.edu.cn...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807656</millis>
+  <sequence>11</sequence>
+  <logger>thephy.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>10</thread>
+  <message>thephy.nju.edu.cn connected: 220-»¶Ó­·ÃÎÊÄÏ¾©´óÑ§ÀíÂÛÎïÀíFtp·þÎñÆ÷£¡
+220 Thephy FTP Server ready.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807687</millis>
+  <sequence>14</sequence>
+  <logger>thephy.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>10</thread>
+  <message>Login to ftp://thephy.nju.edu.cn ok:230-
+230-         »¶Ó­·ÃÎÊÀíÂÛÎïÀí×é FTP ·þÎñÆ÷
+230----------------------------------------------
+230-      Welcome, archive user anonymous@::ffff:172.16.65.9 !
+230-	     
+230-      The local time is: Mon Mar 10 03:17:45 2008
+230-      Users allowed, 18 users online. Max users 0.
+230-		     
+230-      ¸ü¶àµÄÓ°ÊÓ¡¢Èí¼þ×ÊÔ´¾¡ÔÚThephyËÑË÷:
+230-                   http://thephy.nju.edu.cn/
+230------------------------------------------------
+230-                                  ThephyGroup
+230-                                    2000/03
+230 Login successful. Have fun.
+</message>
+</record>
+<record>
+  <date>2008-03-10T12:22:55</date>
+  <millis>1205122975937</millis>
+  <sequence>52</sequence>
+  <logger>thephy.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>10</thread>
+  <message>Finish crawling ftp://thephy.nju.edu.cn</message>
+</record>
+<record>
+  <date>2008-03-10T12:22:55</date>
+  <millis>1205122975937</millis>
+  <sequence>53</sequence>
+  <logger>thephy.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>10</thread>
+  <message>255216 items are crawled</message>
+</record>
+</log>

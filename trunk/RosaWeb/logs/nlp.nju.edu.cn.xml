@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GB18030" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807593</millis>
+  <sequence>4</sequence>
+  <logger>nlp.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Start crawling ftp://nlp.nju.edu.cn...</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807671</millis>
+  <sequence>13</sequence>
+  <logger>nlp.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>nlp.nju.edu.cn connected: 220 Serv-U FTP Server v6.0 for WinSock ready...
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:56:47</date>
+  <millis>1205117807687</millis>
+  <sequence>15</sequence>
+  <logger>nlp.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Login to ftp://nlp.nju.edu.cn ok:230 User logged in, proceed.
+</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852062</millis>
+  <sequence>34</sequence>
+  <logger>nlp.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>Finish crawling ftp://nlp.nju.edu.cn</message>
+</record>
+<record>
+  <date>2008-03-10T10:57:32</date>
+  <millis>1205117852062</millis>
+  <sequence>35</sequence>
+  <logger>nlp.nju.edu.cn</logger>
+  <level>INFO</level>
+  <class>ftp.FtpCrawler</class>
+  <method>crawl</method>
+  <thread>14</thread>
+  <message>5461 items are crawled</message>
+</record>
+</log>
