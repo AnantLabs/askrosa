@@ -1,0 +1,3 @@
+AskRosa FTP search engine is a general-purpose FTP search engine based on Apache Lucene. In this project, we implement various functions, e.g. search suggestion, search history statistics, advanced search and FTP sites management .etc. The development environment is MyEclipse+Tomcat+MySQL。 We employ struts and jsp to code the web-front and all the basic search engine functions like crawler and indexer are implemented with pure java code.
+
+We also put some time to make the project easy to deploy. If you want to have a local FTP search engine, like in a college campus or in a company's local area network or an internet wide FTP search engine, AskRosa will be one of your choices.
